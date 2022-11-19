@@ -8,4 +8,4 @@
 - прописываем `npm install` 
 - сборка в production-режиме `npm run server-build` (`npm run server-dev` в режиме разработки)
 
-## Ответ жду в [Telegram](https://t.me/stfuchump) или на [Почту](nikitoda70@gmail.com)
+## Ответ жду в [Telegram](https://t.me/stfuchump) или на [Почту](mailto:nikitoda70@gmail.com)
