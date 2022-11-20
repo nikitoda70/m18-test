@@ -355,19 +355,31 @@ template {
   !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./styles/styles.scss ***!
   \***************************************************************************************************************/
 @font-face {
-  font-family: "MullerRegular";
-  src: url(../../3d5ff50903b5a6784d3d.ttf) format("truetype");
+  font-family: "Muller";
+  font-weight: 400;
+  src: url(../../assets/fonts/MullerRegular..ttf) format("truetype");
 }
 @font-face {
-  font-family: "MullerMedium";
-  src: url(../../3818d135ddb71a356d02.ttf) format("truetype");
+  font-family: "Muller";
+  font-weight: 500;
+  src: url(../../assets/fonts/MullerMedium..ttf) format("truetype");
 }
 * {
   box-sizing: border-box;
 }
 
 body {
-  font-family: "MullerMedium", sans-serif;
+  font-family: "Muller", sans-serif;
+  color: #000;
+  scroll-behavior: smooth;
+}
+
+.page-title {
+  margin-bottom: 27px;
+  font-size: 64px;
+  line-height: 1;
+  letter-spacing: -0.5px;
+  font-weight: 500;
 }
 
 .header {
@@ -381,4 +393,54 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  z-index: 100;
+}
+.header__tel {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  color: #000;
+  font-size: 21px;
+  line-height: 1.2;
+  transition: 0.1s color ease-in-out;
+}
+.header__tel:hover {
+  color: #f9572e;
+}
+.header__tel-icon {
+  margin-right: 10px;
+  width: 24px;
+  height: 24px;
+}
+
+.hero {
+  display: flex;
+  height: 100vh;
+}
+.hero__content {
+  flex-basis: 50%;
+  align-self: center;
+  padding-left: 106px;
+}
+.hero__description {
+  max-width: 456px;
+  margin-bottom: 44px;
+  letter-spacing: -0.01px;
+  font-size: 21px;
+  line-height: 1.42;
+}
+.hero__info {
+  display: flex;
+  align-items: center;
+}
+.hero__video {
+  flex-basis: 50%;
+  max-width: 50%;
+  padding: 20px;
+}
+.hero__video-preview {
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  object-fit: cover;
 }

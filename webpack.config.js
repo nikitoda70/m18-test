@@ -64,6 +64,10 @@ module.exports = {
     module: { 
         rules: [
             {
+                test: /\.css$/,
+                use: [MiniCssExtractPlugin.loader, 'css-loader']
+            },
+            {
                 test: /\.s[ac]ss$/,
                 use: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader']
             },
@@ -81,6 +85,9 @@ module.exports = {
             {
                 test: /\.(ttf|woff|woff2|eot)$/,
                 type: 'asset/resource',
+                generator: {
+                    filename: `${PATHS.assets}fonts/[name].[ext]`
+                  }
             }
         ]
     }
