@@ -1,17 +1,15 @@
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>test-task</title>
 <link href="assets/css/main.css" rel="stylesheet"></head>
-
 <body>
     <header class="header">
         <img src="assets/img/logo.svg" alt="FIX РЕМОНТ" class="header__logo">
-        <a href="#" class="header__tel">
+        <a href="#footer" class="header__tel">
             <img src="assets/img/tel-icon.svg" alt="Контакты" class="header__tel-icon">
             Контакты
         </a>
@@ -19,19 +17,125 @@
     <section class="hero">
         <div class="hero__content">
             <h1 class="page-title">
-                Ремонт квартир <br> в типовых домах
+                Ремонт квартир <br class="hero__br"> в типовых домах
             </h1>
             <div class="hero__description">
                 Готовый дизайн-проект, работы и материалы за 3 месяца от 610 т.р.
             </div>
             <div class="hero__info">
-                
+                <a href="#feedback" class="button">
+                    Узнайте о запуске первым
+                </a>
+                <div class="hero__info-text">
+                    Старт весной 2016
+                </div>
             </div>
+            <a href="#promo" class="hero__anchor">
+                <img src="assets/img/arrows.svg" alt="Вниз" class="hero__anchor-icon">
+                Листайте вниз, <br>
+                чтобы ничего не упустить
+            </a>
         </div>
         <div class="hero__video">
             <img src="assets/img/hero-video.jpg" alt="Видео" class="hero__video-preview">
+            <button type="button" class="hero__play">
+                <img src="assets/img/play.svg" alt="Воспроизвести" class="hero__play-icon">
+                Смотреть видео
+            </button>
         </div>
     </section>
-<script defer="defer" src="assets/js/main.js"></script></body>
+    <section class="promo" id="promo">
+        <div class="container">
+            <h2 class="block-title">
+                FIX Ремонт — это легко
+            </h2>
+            <div class="block-subtitle">
+                Готовые проекты, проверенные материалы и умелые руки
+            </div>
+            <div class="promo__wrapper">
+                <div class="promo__item">
+                    <div class="promo__title">
+                        Опытная команда
+                    </div>
+                    <div class="promo__text">
+                        Команда проектировщиков и строителей со стажем работы более 6 лет
+                    </div>
+                </div>
+                <div class="promo__item">
+                    <div class="promo__title">
+                        Типовые дизайн-проекты
+                    </div>
+                    <div class="promo__text">
+                        Три стиля чистовой отделки «под ключ» и спектр дополнительных услуг
+                    </div>
+                </div>
+                <div class="promo__item">
+                    <div class="promo__title">
+                        Фиксированная смета
+                    </div>
+                    <div class="promo__text">
+                        Никаких дополнительных расходов во время ремонта. Расчет стоимости при заключении договора
+                    </div>
+                </div>
+                <div class="promo__item promo__item--big">
+                    <div class="promo__title">
+                        Срок работ
+                    </div>
+                    <div class="promo__text">
+                        3 месяца
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <footer class="footer" id="footer">
+        <div class="footer__nav">
+            <a href="#" class="footer__nav-item">
+                <img src="assets/img/fb.svg" alt="Facebook" class="footer__nav-icon">
+            </a>
+            <a href="#" class="footer__nav-item">
+                <img src="assets/img/vk.svg" alt="Vkontakte" class="footer__nav-icon">
+            </a>
+            <a href="#" class="footer__nav-item">
+                <img src="assets/img/ig.svg" alt="Instagram" class="footer__nav-icon">
+            </a>
+        </div>
+        <div class="footer__title">
+            Следите за нашим развитием
+        </div>
+        <div class="footer__text">
+            Подпишитесь на наши аккаунты в соц. сетях, знакомьтесь с нашими проектами и тем, что нас вдохновляет
+        </div>
+        <div class="footer__contacts">
+            <div class="footer__contacts-item">
+                <a href="tel:+78129035445" class="footer__contacts-link">
+                    <img src="assets/img/tel-icon.svg" alt="Номер телефона">
+                    <span class="footer__contacts-link-text">
+                        +7 (812) 903-54-45
+                    </span>
+                </a>
+            </div>
+            <div class="footer__contacts-item">
+                <div class="footer__title">
+                    Ул. Галерная, д 55,
+                </div>
+                <div class="footer__text">
+                    Санкт-Петербург
+                </div>
+            </div>
+            <div class="footer__contacts-item">
+                <a href="#" class="footer__contacts-link footer__contacts-link--email">
+                    <img src="assets/img/email-icon.svg" alt="Электронная почта">
+                    <span class="footer__contacts-link-text">
+                        9035445@gmail.com
+                    </span>
+                </a>
+            </div>
+        </div>
+        <div class="footer__copyright">
+            &copy; FIX Ремонт, 2016
+        </div>
+    </footer>
+<script defer="defer" src="assets/js/main.js"></script></body>
 </html>
