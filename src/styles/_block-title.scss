@@ -1,0 +1,17 @@
+.block-title {
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: $black;
+    letter-spacing: $letter-spacing;
+    font-size: 40px;
+    line-height: 1.25;
+
+    @media (max-width: $xl) {
+        font-size: 32px;
+    }
+
+    @media (max-width: $sm) {
+        font-size: 24px;
+        margin-bottom: 6px;
+    }
+}
