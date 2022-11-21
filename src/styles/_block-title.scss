@@ -6,12 +6,20 @@
     font-size: 40px;
     line-height: 1.25;
 
-    @media (max-width: $xl) {
+    @media (max-width: $hd) {
         font-size: 32px;
     }
 
-    @media (max-width: $sm) {
-        font-size: 24px;
+    @media (max-width: $xl) {
+        font-size: 26px;
+    }
+
+    @media (max-width: $lg) {
+        font-size: 22px;
         margin-bottom: 6px;
+    }
+
+    @media (max-width: $md) {
+        font-size: 20px;
     }
 }

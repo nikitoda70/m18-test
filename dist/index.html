@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>test-task</title>
 <link href="assets/css/main.css" rel="stylesheet"></head>
+
 <body>
     <header class="header">
         <img src="assets/img/logo.svg" alt="FIX РЕМОНТ" class="header__logo">
@@ -89,6 +91,51 @@
         </div>
     </section>
 
+    <section class="feedback" id="feedback">
+        <div class="container">
+            <div class="feedback__wrapper">
+                <div class="block-title feedback__title">
+                    Узнайте о запуске сервиса первым
+                </div>
+                <div class="feedback__inner show" id="feedback-content">
+                    <div class="feedback__gift">
+                        <img src="assets/img/door.svg" alt="Дверь" class="feedback__gift-icon">
+                        Первым 10 клиентам стальная входная дверь в подарок
+                    </div>
+                    <form action="#" class="feedback__form" id="feedback-form">
+                        <div class="feedback__elements">
+                            <div class="form-element">
+                                <input type="text" class="form-element__input" id="feedback-name" placeholder="Имя и фамилия" required>
+                                <label for="feedback-name" class="form-element__label">Имя и фамилия*</label>
+                            </div>
+                            <div class="form-element">
+                                <input type="email" class="form-element__input" id="feedback-email" placeholder="Е-mail адрес" required>
+                                <label for="feedback-email" class="form-element__label">Е-mail адрес*</label>
+                            </div>
+                            <div class="form-element">
+                                <input type="tel" class="form-element__input" id="feedback-tel" placeholder="Телефон">
+                                <label for="feedback-tel" class="form-element__label">Телефон</label>
+                            </div>
+                        </div>
+                        <button type="submit" class="feedback__button button">
+                            Подписаться
+                        </button>
+                        <div class="feedback__condition">
+                            * Обязательные для заполнения поля <br>
+                            <a href="#" class="feedback__condition-link">
+                                Политика конфиденциальности
+                            </a>
+                        </div>
+                    </form>
+                </div>
+                <div class="feedback__success" id="feedback-success">
+                    <img src="assets/img/success.svg" alt="Успешно" class="feedback__success-icon">
+                    Спасибо! Мы будем держать
+                    вас в курсе обновлений
+                </div>
+            </div>
+        </div>
+    </section>
     <footer class="footer" id="footer">
         <div class="footer__nav">
             <a href="#" class="footer__nav-item">
@@ -138,4 +185,5 @@
         </div>
     </footer>
 <script defer="defer" src="assets/js/main.js"></script></body>
+
 </html>
