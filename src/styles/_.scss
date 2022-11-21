@@ -1,4 +1,5 @@
 @import '~normalize.css';
+@import '@splidejs/splide/css';
 @import "base/fonts";
 @import "base/variables";
 @import "base/body";
@@ -13,5 +14,6 @@
 @import "header";
 @import "hero";
 @import "promo";
+@import "slider";
 @import "feedback";
 @import "footer";
